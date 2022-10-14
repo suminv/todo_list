@@ -1,0 +1,11 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+
+    <div class="header-bar">
+    <a href="{% url 'tasks' %}">&#8592; Back</a>
+    </div>
+<h3>Task: {{ detail_task }}</h3>
+{{ detail_task.description }}
+
+{% endblock %}
